@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.nav {
+  width: 100%;
+  display: flex;
+  height: 4rem;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding: 1rem;
+  align-items: center;
+  border-bottom: 4px solid #dfdfdf;
+}
+.nav .img {
+  display: flex;
+  margin-left: 2rem;
+}
+.nav .logo {
+  height: 30px;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+.ul {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+ul {
+  display: flex;
+}
+.nav__item {
+  font-size: 1.7rem;
+  list-style: none;
+  margin-right: 1rem;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.main .sub {
+  height: 80vh;
+  width: 90%;
+  background: #f7f5f5;
+}
+
+.title {
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  color: #dfdfdf;
+  border-bottom: 2px solid #dfdfdf;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.sub__taxi {
+  padding: 1rem 2rem;
+}
+label {
+  display: inline-block;
+  width: 110px;
+}
+@media (max-width: 760px) {
+  .sub__taxi input {
+    margin-top: 2rem;
+  }
+  .input__group .input {
+    margin-top: 2rem;
+  }
+}
+select {
+  padding: 0.2rem 2rem;
+}
+.sub__taxi input {
+  padding: 8px;
+  outline: none;
+  border: 1px solid #dfdfdf;
+}
+.input__group {
+  display: flex;
+}
+.input__group .input {
+  margin-left: 1rem;
+}
+.group {
+  margin-right: 1rem;
+  font-family: roboto;
+  font-weight: 500;
+  font-size: 13px;
+  color: #a1a1a1;
+  margin-top: 8px;
+}
+.sub__taxi input::placeholder {
+  color: #dfdfdf;
+}
+.driver {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+.get button {
+  padding: 0.5rem 4rem;
+  border: 2px solid #dfdfdf;
+  border-radius: 5px;
+}
+.title {
+  position: sticky;
+  top: 0;
+}
+.main .sub {
+  overflow-y: scroll;
+  background: #f7f5f5;
+}
+.flex {
+  display: flex;
+  margin-top: 1rem;
+}
+.flex .name {
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  display: inline-block;
+  width: 96px;
+}
+.flex .box {
+  margin-left: 1rem;
+  padding: 0.5rem 4rem;
+  color: #0c0c0c;
+  background: white;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: auto;
+}
