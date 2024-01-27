@@ -67,7 +67,7 @@
       method:"POST",
       data:{name:name.value,model:model.value,price:price.value}
     }).then(() =>{
-      locatio.href="?page=home";
+      location.href="../?page=home";
     })
   });})
 

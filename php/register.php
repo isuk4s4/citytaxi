@@ -110,7 +110,7 @@ function guidv4($data = null) {
                     <div class="input_class">
                         <select name="role" id="">
                             <option value="client">passenger</option>
-                            <option value="driver">driver</option>
+                            <option value="taxi">driver</option>
 
                         </select>
                     </div>

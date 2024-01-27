@@ -42,7 +42,7 @@ session_start();
                               if($rows['role'] == 'taxi'){
                                 ?>
                                 <select id="test">
-                                  <option>Active</option>
+                                  <option>Available</option>
                                   <option>Busy</option>
                                 </select>
                                 <?php
@@ -66,7 +66,6 @@ session_start();
                       </div>
                     </div>
                         
-
 </nav><?php
                   if($_REQUEST['page'] == 'home'){
                     if($rows['role'] == 'client'){
@@ -99,15 +98,16 @@ session_start();
                         require_once('./php/tel_hire.php');
                       
                      }
+                     if($rows['role'] == 'taxi'){
+                     
+                      require_once('./php/driver_action.php');
+                    
+                   }
                      if($rows['role'] == 'client'){
                      
                       require_once('./php/client_taxi.php');
                     
-                   } if($rows['role'] == 'taxi'){
-                     
-                    require_once('./php/driver_action.php');
-                  
-                 }
+                   } 
                      }
                   }
                 }

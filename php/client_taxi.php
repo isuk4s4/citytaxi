@@ -17,7 +17,7 @@ if($_GET['id']){
         <label for="name">From:</label>
         <select name="from" id="">
             <?php 
-            $query = mysqli_query($con,"SELECT * FROM `km`");
+            $query = mysqli_query($con,"SELECT DISTINCT `froml`, `tol` FROM km; ");
             while($rows = mysqli_fetch_assoc($query)){
                 ?>
                             <option value="<?php echo $rows['froml'];?>"><?php echo $rows['froml']; ?></option>
@@ -31,7 +31,7 @@ if($_GET['id']){
         <label for="lastname">To:</label>
         <select name="destination" id="">
             <?php 
-            $query = mysqli_query($con,"SELECT * FROM `km`");
+            $query = mysqli_query($con,"SELECT DISTINCT `froml`, `tol` FROM km; ");
             while($rows = mysqli_fetch_assoc($query)){
                 ?>
                             <option value="<?php echo $rows['tol'];?>"><?php echo $rows['tol']; ?></option>

@@ -11,7 +11,7 @@ LEFT JOIN taxi ON users.uuid = taxi.uuid
 WHERE
 users.`uuid` = '$log' AND taxi.driver IS NOT NULL");
 if(mysqli_num_rows($query) == 0){
-    require_once("./driver_wiz.php");
+   echo "<script>location.href='php/driver_wiz.php';</script>";
 }else{
     $rowsdriver = mysqli_fetch_array($query);
     $id = $rowsdriver['idt'];

@@ -161,10 +161,10 @@ $row_driver = mysqli_fetch_array($driver_data);
 $hiredata = mysqli_query($con,"SELECT * FROM `km` where `id`='$locationid'");
 $hirerow = mysqli_fetch_array($hiredata);
 if(isset($_POST['got'])){
-    if(!isset($_POST['rate'])){
+    if(!isset($_POST['rating'])){
         $rate = 0;       
     }else{
-        $rate = $_POST['rate'];
+        $rate = $_POST['rating'];
     }
     $run =mysqli_query($con,"INSERT INTO `rate`(`driverid`, `rate`) VALUES ('$driverid','$rate')");
     if($run){
